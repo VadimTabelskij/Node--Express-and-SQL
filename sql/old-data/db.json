@@ -1,0 +1,280 @@
+{
+  "cars": [
+    {
+      "id": "1",
+      "brand": "Mercedes Benz",
+      "model": "G63 AMG",
+      "location": {
+        "country": "Germany",
+        "city": "Wolfsburg"
+      },
+      "images": [
+        "https://hips.hearstapps.com/hmg-prod/images/21c0550-001-1630936200.jpg",
+        "https://hips.hearstapps.com/hmg-prod/amv-prod-cad-assets/wp-content/uploads/2018/02/2019-Mercedes-AMG-G63-101.jpg?crop=0.548xw:0.675xh;0.144xw,0.207xh&resize=640:*",
+        "https://hips.hearstapps.com/hmg-prod/images/2019-mercedes-amg-g63-104-1549404384.jpg?crop=0.894xw:1.00xh;0.0545xw,0&resize=640:*"
+      ],
+      "style": "Suv",
+      "year": "2022",
+      "person": {
+        "name": "Booby",
+        "surname": "Bellagamba",
+        "phone": "+49 160-5556-417",
+        "email": "user1@gmail.com",
+        "image": "https://nypost.com/wp-content/uploads/sites/2/2013/08/14t-derek_-c-ta-300x300.jpg?quality=75&strip=all"
+      }
+    },
+    {
+      "id": "2",
+      "brand": "Ferrari",
+      "model": "812 GTS",
+      "location": {
+        "country": "Italy",
+        "city": "Modena"
+      },
+      "images": [
+        "https://carconfigurator.ferrari.com/assets/cars/portofinom/packages/default/car-ferrari-portofino-m_splash.jpg",
+        "https://avatars.dzeninfra.ru/get-zen_doc/62191/pub_5ad759e0581669e0006bb6a9_5ad75aca0422b428662afba3/scale_1200",
+        "https://image.cnbcfm.com/api/v1/image/105940475-1559232349684190164-car-ferrari-sf90-stradale.jpg?v=1559232362&w=1600&h=900"
+      ],
+      "style": "Coupe",
+      "year": "2019",
+      "person": {
+        "name": "Silva",
+        "surname": "Medina",
+        "phone": "+39 159-4337-892",
+        "email": "user2@gmail.com",
+        "image": "https://d1qxviojg2h5lt.cloudfront.net/images/01FW8P5XRBZZTPGA73CJ00YVZ9/inventing.anna.enamored.webp"
+      }
+    },
+    {
+      "id": "3",
+      "brand": "Land Rover",
+      "model": "Range Rover Sport",
+      "location": {
+        "country": "United Kingdom",
+        "city": "London"
+      },
+      "images": [
+        "https://www.drivespark.com/img/1200x60x675/2022/05/2022-land-rover-range-rover-sport-front-view-shot-1652243072.jpg",
+        "https://thumbor.forbes.com/thumbor/fit-in/960x/filters:format(jpg)/https://www.forbes.com/wheels/wp-content/uploads/2021/10/2022_new_Range-_Rover-1.png",
+        "https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/gallery_slide/public/images/car-reviews/first-drives/legacy/rrs195mydynamic13021912.jpg?itok=WI_HeFWO"
+      ],
+      "style": "Suv",
+      "year": "2018",
+      "person": {
+        "name": "Booby",
+        "surname": "Bellagamba",
+        "phone": "+49 160-5556-417",
+        "email": "user1@gmail.com",
+        "image": "https://nypost.com/wp-content/uploads/sites/2/2013/08/14t-derek_-c-ta-300x300.jpg?quality=75&strip=all"
+      }
+    },
+    {
+      "id": "4",
+      "brand": "Audi",
+      "model": "A7",
+      "location": {
+        "country": "Germany",
+        "city": "Vorsprung"
+      },
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Audi_A7_Sportback_Genf_2018.jpg/1200px-Audi_A7_Sportback_Genf_2018.jpg",
+        "https://www.autoscout24.it/cms-content-assets/2V7JvOenwe1ipKlSZCu3RY-70addd0128cc42ca0faf1a8b6f4c460e-audi-a7-sportback-front-1100.jpeg",
+        "https://autogoda.ru/upload/iblock/b4a/b4a20a3ac06c18cc1e77415d3efa48aa.jpg"
+      ],
+      "style": "Sedan",
+      "year": "2017",
+      "person": {
+        "name": "Silva",
+        "surname": "Medina",
+        "phone": "+39 159-4337-892",
+        "email": "user2@gmail.com",
+        "image": "https://d1qxviojg2h5lt.cloudfront.net/images/01FW8P5XRBZZTPGA73CJ00YVZ9/inventing.anna.enamored.webp"
+      }
+    },
+    {
+      "id": "5",
+      "brand": "BMW",
+      "model": "750",
+      "location": {
+        "country": "Germany",
+        "city": "Munich"
+      },
+      "images": [
+        "https://s.auto.drom.ru/i24267/pubs/4/87393/3804616.jpeg",
+        "https://www.krasta-auto.lt/wp-content/uploads/2021/04/BMW-M-009.jpg",
+        "https://www.bmw.lt/content/dam/bmw/common/topics/fascination-bmw/bmw-m-individual/bmw-m-individual-relaunch-sp-desktop.jpg"
+      ],
+      "style": "Sedan",
+      "year": "2021",
+      "person": {
+        "name": "Booby",
+        "surname": "Bellagamba",
+        "phone": "+49 160-5556-417",
+        "email": "user1@gmail.com",
+        "image": "https://nypost.com/wp-content/uploads/sites/2/2013/08/14t-derek_-c-ta-300x300.jpg?quality=75&strip=all"
+      }
+    },
+    {
+      "id": "6",
+      "brand": "Lamborghini",
+      "model": "Huracan",
+      "location": {
+        "country": "Italy",
+        "city": "Sant Agata Bolognese"
+      },
+      "images": [
+        "https://media.ed.edmunds-media.com/lamborghini/aventador/2022/oem/2022_lamborghini_aventador_convertible_ultimae-roadster_fq_oem_1_1600.jpg",
+        "https://www.courtage-expertise-auto.fr/wp-content/uploads/2022/11/Lamborghini-Aventador_LP700-4-2012-1600-02-653x400.jpg",
+        "https://www.alainclass.com/wp-content/uploads/2022/04/2015-Lamborghini-Aventador-Roadster-GREEN-3955-5.jpg"
+      ],
+      "style": "Coupe",
+      "year": "2020",
+      "person": {
+        "name": "Silva",
+        "surname": "Medina",
+        "phone": "+39 159-4337-892",
+        "email": "user2@gmail.com",
+        "image": "https://d1qxviojg2h5lt.cloudfront.net/images/01FW8P5XRBZZTPGA73CJ00YVZ9/inventing.anna.enamored.webp"
+      }
+    },
+    {
+      "id": "7",
+      "brand": "Lamborghini",
+      "model": "Urus",
+      "location": {
+        "country": "Italy",
+        "city": "Roma"
+      },
+      "images": [
+        "https://s1.15min.lt/images/photos/2020/07/01/original/lamborghini-urus-5efc6e7377084.jpg",
+        "https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/model_gw/urus/2022/08_19_urus_perf/s/gate_urus_s2_m.jpg",
+        "https://pugachev.miami/wp-content/uploads/2019/03/urus3-1030x824.jpg"
+      ],
+      "style": "Suv",
+      "year": "2023",
+      "person": {
+        "name": "Booby",
+        "surname": "Bellagamba",
+        "phone": "+49 160-5556-417",
+        "email": "user1@gmail.com",
+        "image": "https://nypost.com/wp-content/uploads/sites/2/2013/08/14t-derek_-c-ta-300x300.jpg?quality=75&strip=all"
+      }
+    },
+    {
+      "id": "8",
+      "brand": "Lada",
+      "model": "2101",
+      "location": {
+        "country": "Russian",
+        "city": "Moskov"
+      },
+      "images": [
+        "https://baltic.gamblingzion.com/uploads/2015/11/Wikiniva13a.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl-0d5irBmf-2EHf8YWblLVf21PsFIdzg-ZtMvtL2LTk3rFpC_oiYTI9i1Imi-JaQMo_Q&usqp=CAU",
+        "https://www.major-lada.ru/images/gallery/gallery_model_content_preview_img/gallery_model_content_preview_img_dizain_vesta_sedan_1.jpg"
+      ],
+      "style": "Sedan",
+      "year": "1994",
+      "person": {
+        "name": "Silva",
+        "surname": "Medina",
+        "phone": "+39 159-4337-892",
+        "email": "user2@gmail.com",
+        "image": "https://d1qxviojg2h5lt.cloudfront.net/images/01FW8P5XRBZZTPGA73CJ00YVZ9/inventing.anna.enamored.webp"
+      }
+    },
+    {
+      "id": "9",
+      "brand": "Porsche",
+      "model": "911 Carrera",
+      "location": {
+        "country": "Germany",
+        "city": "Stuttgart"
+      },
+      "images": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIJbR41XcWyrKBe8ObYy1AHd8xRk4YVlTsdGoQxYiladiRvMiodcl02Enytxbzg8EgArw&usqp=CAU",
+        "https://cdn.motor1.com/images/mgl/Kbbj1A/s1/porsche-tequipment-roof-tent.jpg",
+        "https://cdn.shopify.com/s/files/1/0255/8659/7968/t/2/assets/Enorm-Gallery49825-69de9f-04cee01affbc40e487c79d6f9d2cee86-mv2-d-5184-3888-s-4-2.jpg?v=1576084961&width=1024"
+      ],
+      "style": "Coupe",
+      "year": "2018",
+      "person": {
+        "name": "Booby",
+        "surname": "Bellagamba",
+        "phone": "+49 160-5556-417",
+        "email": "user1@gmail.com",
+        "image": "https://nypost.com/wp-content/uploads/sites/2/2013/08/14t-derek_-c-ta-300x300.jpg?quality=75&strip=all"
+      }
+    },
+    {
+      "id": "10",
+      "brand": "Toyota",
+      "model": "GR Supra",
+      "location": {
+        "country": "Japan",
+        "city": "Tahara"
+      },
+      "images": [
+        "https://stimg.cardekho.com/images/carexteriorimages/930x620/Toyota/Supra/9574/1673950511987/front-left-side-47.jpg",
+        "https://celes.club/uploads/posts/2022-06/1655331806_20-celes-club-p-toiota-supra-forsazh-mashini-krasivo-foto-23.jpg",
+        "https://www.diariomotor.com/imagenes/2022/04/toyota-gr-supra-cambio-manual-2022-06-626a41f138e8a.jpg"
+      ],
+      "style": "Coupe",
+      "year": "2017",
+      "person": {
+        "name": "Silva",
+        "surname": "Medina",
+        "phone": "+39 159-4337-892",
+        "email": "user2@gmail.com",
+        "image": "https://d1qxviojg2h5lt.cloudfront.net/images/01FW8P5XRBZZTPGA73CJ00YVZ9/inventing.anna.enamored.webp"
+      }
+    },
+    {
+      "id": "11",
+      "brand": "Rolls Royce",
+      "model": "Wraith",
+      "location": {
+        "country": "United Kingdom",
+        "city": "Goodwood"
+      },
+      "images": [
+        "https://www.rolls-roycemotorcars.com/content/dam/rrmc/marketUK/rollsroycemotorcars_com/phantom-series-ii-discover/page-properties/Phantom-II-Discover-Hero-Single-Twin-Card.jpg",
+        "https://www.rollsroyceprague.cz/UserFiles/Image/1652767584rolls-royce-phantom-extended-seriesII-2-.jpg",
+        "https://cdn.motor1.com/images/mgl/2Np0Zn/s1/2023-rolls-royce-spectre.jpg"
+      ],
+      "style": "Coupe",
+      "year": "2022",
+      "person": {
+        "name": "Booby",
+        "surname": "Bellagamba",
+        "phone": "+49 160-5556-417",
+        "email": "user1@gmail.com",
+        "image": "https://nypost.com/wp-content/uploads/sites/2/2013/08/14t-derek_-c-ta-300x300.jpg?quality=75&strip=all"
+      }
+    },
+    {
+      "id": "12",
+      "brand": "Ford",
+      "model": "Mustang",
+      "location": {
+        "country": "California",
+        "city": "Los Angeles"
+      },
+      "images": [
+        "https://hips.hearstapps.com/hmg-prod/images/2022-ford-mustang-shelby-gt500-02-1636734552.jpg",
+        "https://www.motortrend.com/uploads/2023/01/2023-Ford-Mustang-Mach-1-6M-42.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR58HppXXPZahpmo8R60bdNJ0LoWi3moRd8hY7LLt7SrdlytOmaKtB07kP_-QKtM0PltuM&usqp=CAU"
+      ],
+      "style": "Coupe",
+      "year": "2016",
+      "person": {
+        "name": "Silva",
+        "surname": "Medina",
+        "phone": "+39 159-4337-892",
+        "email": "user2@gmail.com",
+        "image": "https://d1qxviojg2h5lt.cloudfront.net/images/01FW8P5XRBZZTPGA73CJ00YVZ9/inventing.anna.enamored.webp"
+      }
+    }
+  ]
+}

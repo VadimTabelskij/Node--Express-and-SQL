@@ -1,3 +1,13 @@
+insert into images(src) values
+('https://i.pinimg.com/474x/f1/2e/5d/f12e5d0da695847b533ca50cce5effb7.jpg'),
+('https://nypost.com/wp-content/uploads/sites/2/2013/08/14t-derek_-c-ta-300x300.jpg?quality=75&strip=all'),
+('https://d1qxviojg2h5lt.cloudfront.net/images/01FW8P5XRBZZTPGA73CJ00YVZ9/inventing.anna.enamored.webp');
+
+insert into users(email, password, name, surname, phone, imageId, role) values
+('admin1@gmail.com', 'CityVilnius1387', 'Bob', 'Basim', '+44 329-4001-209', 1, 'ADMIN'),
+('user1@gmail.com', '', 'Booby', 'Bellagamba', '+49 160-5556-417', 2, 'USER'),
+('user2@gmail.com', '', 'Silva', 'Medina', '+39 159-4337-892', 3, 'USER');
+
 insert into country(title) values
 ('Germany'),
 ('Italy'),
@@ -20,7 +30,6 @@ insert into city(countryId, title) values
 (3, 'Goodwood'),
 (6, 'Los Angeles');
 
-
 insert into model(title) values
 ('G63 AMG'),
 ('812 GTS'),
@@ -35,16 +44,92 @@ insert into model(title) values
 ('Wraith'),
 ('Mustang');
 
-insert into brand(modelId, title) values
-(1, 'Mercedes Benz'),
-(2, 'Ferrari'),
-(3, 'Land Rover'),
-(4, 'Audi'),
-(5, 'BMW'),
-(6, 'Lamborghini'),
-(7, 'Lamborghini'),
-(8, 'Lada'),
-(9, 'Porsche'),
-(10, 'Toyota'),
-(11, 'Rolls Royce'),
-(12, 'Ford');
+insert into car(userId, cityId, brandId, style, year, address) values
+(2, 1, 1, 'Suv', '2022', 'address 1'),
+(3, 2, 2, 'Coupe', '2019', 'address 2'),
+(2, 3, 3, 'Suv', '2018', 'address 3'),
+(3, 4, 4, 'Sedan', '2017', 'address 4'),
+(2, 5, 5, 'Sedan', '2021', 'address 5'),
+(3, 6, 6, 'Coupe', '2020', 'address 6'),
+(2, 7, 7, 'Suv', '2023', 'address 7'),
+(3, 8, 8, 'Sedan', '1994', 'address 8'),
+(2, 9, 9, 'Coupe', '2018', 'address 9'),
+(3, 10, 10, 'Coupe', '2017', 'address 10'),
+(2, 11, 11, 'Coupe', '2022', 'address 11'),
+(3, 12, 12, 'Coupe', '2016', 'address 12');
+
+insert into image(src) values
+('https://hips.hearstapps.com/hmg-prod/images/21c0550-001-1630936200.jpg'),
+('https://hips.hearstapps.com/hmg-prod/amv-prod-cad-assets/wp-content/uploads/2018/02/2019-Mercedes-AMG-G63-101.jpg?crop=0.548xw:0.675xh;0.144xw,0.207xh&resize=640:*'),
+('https://hips.hearstapps.com/hmg-prod/images/2019-mercedes-amg-g63-104-1549404384.jpg?crop=0.894xw:1.00xh;0.0545xw,0&resize=640:*'),
+('https://carconfigurator.ferrari.com/assets/cars/portofinom/packages/default/car-ferrari-portofino-m_splash.jpg'),
+('https://avatars.dzeninfra.ru/get-zen_doc/62191/pub_5ad759e0581669e0006bb6a9_5ad75aca0422b428662afba3/scale_1200'),
+('https://image.cnbcfm.com/api/v1/image/105940475-1559232349684190164-car-ferrari-sf90-stradale.jpg?v=1559232362&w=1600&h=900'),
+('https://www.drivespark.com/img/1200x60x675/2022/05/2022-land-rover-range-rover-sport-front-view-shot-1652243072.jpg'),
+('https://thumbor.forbes.com/thumbor/fit-in/960x/filters:format(jpg)/https://www.forbes.com/wheels/wp-content/uploads/2021/10/2022_new_Range-_Rover-1.png'),
+('https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/gallery_slide/public/images/car-reviews/first-drives/legacy/rrs195mydynamic13021912.jpg?itok=WI_HeFWO'),
+('https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Audi_A7_Sportback_Genf_2018.jpg/1200px-Audi_A7_Sportback_Genf_2018.jpg'),
+('https://www.autoscout24.it/cms-content-assets/2V7JvOenwe1ipKlSZCu3RY-70addd0128cc42ca0faf1a8b6f4c460e-audi-a7-sportback-front-1100.jpeg'),
+('https://autogoda.ru/upload/iblock/b4a/b4a20a3ac06c18cc1e77415d3efa48aa.jpg'),
+('https://s.auto.drom.ru/i24267/pubs/4/87393/3804616.jpeg'),
+('https://www.krasta-auto.lt/wp-content/uploads/2021/04/BMW-M-009.jpg'),
+('https://www.bmw.lt/content/dam/bmw/common/topics/fascination-bmw/bmw-m-individual/bmw-m-individual-relaunch-sp-desktop.jpg'),
+('https://media.ed.edmunds-media.com/lamborghini/aventador/2022/oem/2022_lamborghini_aventador_convertible_ultimae-roadster_fq_oem_1_1600.jpg'),
+('https://www.courtage-expertise-auto.fr/wp-content/uploads/2022/11/Lamborghini-Aventador_LP700-4-2012-1600-02-653x400.jpg'),
+('https://www.alainclass.com/wp-content/uploads/2022/04/2015-Lamborghini-Aventador-Roadster-GREEN-3955-5.jpg'),
+('https://s1.15min.lt/images/photos/2020/07/01/original/lamborghini-urus-5efc6e7377084.jpg'),
+('https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/model_gw/urus/2022/08_19_urus_perf/s/gate_urus_s2_m.jpg'),
+('https://pugachev.miami/wp-content/uploads/2019/03/urus3-1030x824.jpg'),
+('https://baltic.gamblingzion.com/uploads/2015/11/Wikiniva13a.jpg'),
+('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl-0d5irBmf-2EHf8YWblLVf21PsFIdzg-ZtMvtL2LTk3rFpC_oiYTI9i1Imi-JaQMo_Q&usqp=CAU'),
+('https://www.major-lada.ru/images/gallery/gallery_model_content_preview_img/gallery_model_content_preview_img_dizain_vesta_sedan_1.jpg'),
+('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIJbR41XcWyrKBe8ObYy1AHd8xRk4YVlTsdGoQxYiladiRvMiodcl02Enytxbzg8EgArw&usqp=CAU'),
+('https://cdn.motor1.com/images/mgl/Kbbj1A/s1/porsche-tequipment-roof-tent.jpg'),
+('https://cdn.shopify.com/s/files/1/0255/8659/7968/t/2/assets/Enorm-Gallery49825-69de9f-04cee01affbc40e487c79d6f9d2cee86-mv2-d-5184-3888-s-4-2.jpg?v=1576084961&width=1024'),
+('https://stimg.cardekho.com/images/carexteriorimages/930x620/Toyota/Supra/9574/1673950511987/front-left-side-47.jpg'),
+('https://celes.club/uploads/posts/2022-06/1655331806_20-celes-club-p-toiota-supra-forsazh-mashini-krasivo-foto-23.jpg'),
+('https://www.diariomotor.com/imagenes/2022/04/toyota-gr-supra-cambio-manual-2022-06-626a41f138e8a.jpg'),
+('https://www.rolls-roycemotorcars.com/content/dam/rrmc/marketUK/rollsroycemotorcars_com/phantom-series-ii-discover/page-properties/Phantom-II-Discover-Hero-Single-Twin-Card.jpg'),    
+('https://www.rollsroyceprague.cz/UserFiles/Image/1652767584rolls-royce-phantom-extended-seriesII-2-.jpg'),
+('https://cdn.motor1.com/images/mgl/2Np0Zn/s1/2023-rolls-royce-spectre.jpg'),
+('https://hips.hearstapps.com/hmg-prod/images/2022-ford-mustang-shelby-gt500-02-1636734552.jpg'),
+('https://www.motortrend.com/uploads/2023/01/2023-Ford-Mustang-Mach-1-6M-42.jpg'),
+('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR58HppXXPZahpmo8R60bdNJ0LoWi3moRd8hY7LLt7SrdlytOmaKtB07kP_-QKtM0PltuM&usqp=CAU');
+
+insert into car_image(carId, imageId) values
+(1, 4),
+(1, 5),
+(1, 6),
+(2, 7),
+(2, 8),
+(2, 9),
+(3, 10),
+(3, 11),
+(3, 12),
+(4, 13),
+(4, 14),
+(4, 15),
+(5, 16),
+(5, 17),
+(5, 18),
+(6, 19),
+(6, 20),
+(6, 21),
+(7, 22),
+(7, 23),
+(7, 24),
+(8, 25),
+(8, 26),
+(8, 27),
+(9, 28),
+(9, 29),
+(9, 30),
+(10, 31),
+(10, 32),
+(10, 33),
+(11, 34),
+(11, 35),
+(11, 36),
+(12, 37),
+(12, 38),
+(12, 39);

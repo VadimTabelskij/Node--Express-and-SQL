@@ -13,8 +13,7 @@ const imagesInsertionRows = person
 const imagesInsertionSql = `
 insert into images(src) values
 ('https://i.pinimg.com/474x/f1/2e/5d/f12e5d0da695847b533ca50cce5effb7.jpg'),
-${imagesInsertionRows};
-`;
+${imagesInsertionRows};`;
 
 const personInsertionRows = person
   .map(({
@@ -29,12 +28,16 @@ const personInsertionRows = person
 const usersInsertionSql = `
 insert into users(email, password, name, surname, phone, imageId, role) values
 ('admin1@gmail.com', 'CityVilnius1387', 'Bob', 'Basim', '+44 329-4001-209', 1, 'ADMIN'),
-${personInsertionRows};
-`;
+${personInsertionRows};`;
 
 console.log(imagesInsertionSql);
 console.log(usersInsertionSql);
 
+const usersEmailIdMap = person.reduce((prevMap, user, i) => ({
+  ...prevMap,
+  [user.email]: i + 2
+}), {})
+
 module.exports = {
-  users: person.map((x, i) => ({ ...x, id: i + 2 }))
+  usersEmailIdMap
 }

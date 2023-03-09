@@ -10,6 +10,10 @@ const insertionRows = cars
 
 const insertionSQL = `
 insert into brand(modelId, title) values
-${insertionRows};
-`
+${insertionRows};`;
+
 console.log(insertionSQL)
+
+module.exports = {
+  insertionSQL,
+}

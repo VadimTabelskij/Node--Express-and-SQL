@@ -14,8 +14,8 @@ const insertionRows = modelTitles
 
 const insertionSQL = `
 insert into model(title) values
-${insertionRows};
-`;
+${insertionRows};`;
+
 console.log(insertionSQL);
 
 module.exports = {

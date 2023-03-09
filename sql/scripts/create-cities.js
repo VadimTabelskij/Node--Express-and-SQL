@@ -9,10 +9,11 @@ const insertionRows = cars
   title: x.location.city
 }))
 .map(({ countryId, title }) => `(${countryId}, '${title}')`)
+.join(',\n')
 
 const insertionSQL = `
 insert into city(countryId, title) values
-${insertionRows};`
+${insertionRows};`;
 
 const countryCityMap = cars
   .map(x => x.location)
@@ -30,7 +31,6 @@ const countryCityMap = cars
   }, {})
 
 console.log(insertionSQL)
-console.log(countryCityMap)
 
 module.exports = {
   countryCityMap,

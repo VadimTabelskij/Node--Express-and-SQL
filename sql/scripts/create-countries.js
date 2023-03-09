@@ -14,8 +14,8 @@ const insertionRows = countriesTitles
 
 const insertionSQL = `
 insert into country(title) values
-${insertionRows};
-`;
+${insertionRows};`;
+
 console.log(insertionSQL);
 
 module.exports = {

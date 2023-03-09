@@ -46,6 +46,7 @@ create table user (
   surname varchar(64) not null,
   phone varchar(16) not null,
   imageId int4 unsigned not null unique,
+  role enum ('USER', 'ADMIN') default 'USER',
   createdAt timestamp default current_timestamp,
   updatedAt timestamp default current_timestamp on update current_timestamp,
   foreign key (imageId) references image(imageId)

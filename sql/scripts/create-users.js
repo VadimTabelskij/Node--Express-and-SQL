@@ -11,7 +11,7 @@ const imagesInsertionRows = person
   .join(',\n');
 
 const imagesInsertionSql = `
-insert into images(src) values
+insert into image(src) values
 ('https://i.pinimg.com/474x/f1/2e/5d/f12e5d0da695847b533ca50cce5effb7.jpg'),
 ${imagesInsertionRows};`;
 
@@ -26,7 +26,7 @@ const personInsertionRows = person
 
 
 const usersInsertionSql = `
-insert into users(email, password, name, surname, phone, imageId, role) values
+insert into user(email, password, name, surname, phone, imageId, role) values
 ('admin1@gmail.com', 'CityVilnius1387', 'Bob', 'Basim', '+44 329-4001-209', 1, 'ADMIN'),
 ${personInsertionRows};`;
 

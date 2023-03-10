@@ -1,7 +1,7 @@
 const dbData = require('../old-data/db.json');
 const { usersEmailIdMap } = require('./create-users');
 const { countryCityMap } = require('./create-cities');
-const { modelMap } = require('./create-modelies');
+const { modelBrandMap } = require('./create-brandies');
 
 
 const carInsertionRows = dbData.cars.map(({
@@ -10,9 +10,9 @@ const carInsertionRows = dbData.cars.map(({
     style,
     year,
     address,
-    model: brandId
+    type: { model, brand, }
 }) => {
-    return `(${usersEmailIdMap[person.email]}, ${countryCityMap[country][city]}, ${modelMap[brandId]}, '${style}', '${year}', '${address}')`;
+    return `(${usersEmailIdMap[person.email]}, ${countryCityMap[country][city]}, ${modelBrandMap[model][brand]}, '${style}', '${year}', '${address}')`;
 }).join(',\n');
 
 const insertionSQL = `

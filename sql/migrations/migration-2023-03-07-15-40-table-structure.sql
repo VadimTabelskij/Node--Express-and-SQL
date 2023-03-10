@@ -54,12 +54,12 @@ create table user (
 
 create table car (
   carId int4 unsigned primary key auto_increment,
-  style varchar(16) not null,
-  year varchar(16) not null,
-  address varchar(64) not null,
   userId int4 unsigned not null,
   cityId int4 unsigned not null,
   brandId int4 unsigned not null,
+  style varchar(16) not null,
+  year varchar(16) not null,
+  address varchar(64) not null,
   createdAt timestamp default current_timestamp,
   updatedAt timestamp default current_timestamp on update current_timestamp,
   foreign key (userId) references user(userId),

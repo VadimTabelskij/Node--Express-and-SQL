@@ -2,7 +2,7 @@ const dbData = require('../old-data/db.json');
 
 const { cars } = dbData;
 
-const modelTitles = [...new Set(cars.map((x) => x.model))];
+const modelTitles = [...new Set(cars.map((x) => x.type.model))];
 const modelMap = modelTitles.reduce((prevMap, modelTitle, i) => ({
     ...prevMap,
     [modelTitle]: i + 1,

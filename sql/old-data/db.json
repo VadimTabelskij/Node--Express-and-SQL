@@ -3,8 +3,10 @@
     {
       "id": "1",
       "address": "address 1",
-      "brand": "Mercedes Benz",
-      "model": "G63 AMG",
+      "type": {
+        "brand": "Mercedes Benz",
+        "model": "G63 AMG"
+      },
       "location": {
         "country": "Germany",
         "city": "Wolfsburg"
@@ -27,8 +29,10 @@
     {
       "id": "2",
       "address": "address 2",
-      "brand": "Ferrari",
-      "model": "812 GTS",
+      "type": {
+        "brand": "Ferrari",
+        "model": "812 GTS"
+      },
       "location": {
         "country": "Italy",
         "city": "Modena"
@@ -51,8 +55,10 @@
     {
       "id": "3",
       "address": "address 3",
-      "brand": "Land Rover",
-      "model": "Range Rover Sport",
+      "type": {
+        "brand": "Land Rover",
+        "model": "Range Rover Sport"
+      },
       "location": {
         "country": "United Kingdom",
         "city": "London"
@@ -75,8 +81,10 @@
     {
       "id": "4",
       "address": "address 4",
-      "brand": "Audi",
-      "model": "A7",
+      "type": {
+        "brand": "Audi",
+        "model": "A7"
+      },
       "location": {
         "country": "Germany",
         "city": "Vorsprung"
@@ -99,8 +107,10 @@
     {
       "id": "5",
       "address": "address 5",
-      "brand": "BMW",
-      "model": "750",
+      "type": {
+        "brand": "BMW",
+        "model": "750"
+      },
       "location": {
         "country": "Germany",
         "city": "Munich"
@@ -123,8 +133,10 @@
     {
       "id": "6",
       "address": "address 6",
-      "brand": "Lamborghini",
-      "model": "Huracan",
+      "type": {
+        "brand": "Lamborghini",
+        "model": "Huracan"
+      },
       "location": {
         "country": "Italy",
         "city": "Sant Agata Bolognese"
@@ -147,8 +159,10 @@
     {
       "id": "7",
       "address": "address 7",
-      "brand": "Lamborghini",
-      "model": "Urus",
+      "type": {
+        "brand": "Lamborghini",
+        "model": "Urus"
+      },
       "location": {
         "country": "Italy",
         "city": "Roma"
@@ -171,8 +185,10 @@
     {
       "id": "8",
       "address": "address 8",
-      "brand": "Lada",
-      "model": "2101",
+      "type": {
+        "brand": "Lada",
+        "model": "2101"
+      },
       "location": {
         "country": "Russian",
         "city": "Moskov"
@@ -195,8 +211,10 @@
     {
       "id": "9",
       "address": "address 9",
-      "brand": "Porsche",
-      "model": "911 Carrera",
+      "type": {
+        "brand": "Porsche",
+        "model": "911 Carrera"
+      },
       "location": {
         "country": "Germany",
         "city": "Stuttgart"
@@ -219,8 +237,10 @@
     {
       "id": "10",
       "address": "address 10",
-      "brand": "Toyota",
-      "model": "GR Supra",
+      "type": {
+        "brand": "Toyota",
+        "model": "GR Supra"
+      },
       "location": {
         "country": "Japan",
         "city": "Tahara"
@@ -243,8 +263,10 @@
     {
       "id": "11",
       "address": "address 11",
-      "brand": "Rolls Royce",
-      "model": "Wraith",
+      "type": {
+        "brand": "Rolls Royce",
+        "model": "Wraith"
+      },
       "location": {
         "country": "United Kingdom",
         "city": "Goodwood"
@@ -267,8 +289,10 @@
     {
       "id": "12",
       "address": "address 12",
-      "brand": "Ford",
-      "model": "Mustang",
+      "type": {
+        "brand": "Ford",
+        "model": "Mustang"
+      },
       "location": {
         "country": "California",
         "city": "Los Angeles"

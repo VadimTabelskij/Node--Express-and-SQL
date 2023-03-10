@@ -1,12 +1,3 @@
-insert into image(src) values
-('https://i.pinimg.com/474x/f1/2e/5d/f12e5d0da695847b533ca50cce5effb7.jpg'),
-('https://nypost.com/wp-content/uploads/sites/2/2013/08/14t-derek_-c-ta-300x300.jpg?quality=75&strip=all'),
-('https://d1qxviojg2h5lt.cloudfront.net/images/01FW8P5XRBZZTPGA73CJ00YVZ9/inventing.anna.enamored.webp');
-
-insert into user(email, password, name, surname, phone, imageId, role) values
-('admin1@gmail.com', 'CityVilnius1387', 'Bob', 'Basim', '+44 329-4001-209', 1, 'ADMIN'),
-('user1@gmail.com', '', 'Booby', 'Bellagamba', '+49 160-5556-417', 2, 'USER'),
-('user2@gmail.com', '', 'Silva', 'Medina', '+39 159-4337-892', 3, 'USER');
 
 insert into country(title) values
 ('Germany'),
@@ -58,6 +49,16 @@ insert into brand(modelId, title) values
 (11, 'Rolls Royce'),
 (12, 'Ford');
 
+insert into image(src) values
+('https://i.pinimg.com/474x/f1/2e/5d/f12e5d0da695847b533ca50cce5effb7.jpg'),
+('https://nypost.com/wp-content/uploads/sites/2/2013/08/14t-derek_-c-ta-300x300.jpg?quality=75&strip=all'),
+('https://d1qxviojg2h5lt.cloudfront.net/images/01FW8P5XRBZZTPGA73CJ00YVZ9/inventing.anna.enamored.webp');
+
+insert into user(email, password, name, surname, phone, imageId, role) values
+('admin1@gmail.com', 'CityVilnius1387', 'Bob', 'Basim', '+44 329-4001-209', 1, 'ADMIN'),
+('user1@gmail.com', '', 'Booby', 'Bellagamba', '+49 160-5556-417', 2, 'USER'),
+('user2@gmail.com', '', 'Silva', 'Medina', '+39 159-4337-892', 3, 'USER');
+
 insert into car(userId, cityId, brandId, style, year, address) values
 (2, 1, 1, 'Suv', '2022', 'address 1'),
 (3, 2, 2, 'Coupe', '2019', 'address 2'),
@@ -80,7 +81,7 @@ insert into image(src) values
 ('https://avatars.dzeninfra.ru/get-zen_doc/62191/pub_5ad759e0581669e0006bb6a9_5ad75aca0422b428662afba3/scale_1200'),
 ('https://image.cnbcfm.com/api/v1/image/105940475-1559232349684190164-car-ferrari-sf90-stradale.jpg?v=1559232362&w=1600&h=900'),
 ('https://www.drivespark.com/img/1200x60x675/2022/05/2022-land-rover-range-rover-sport-front-view-shot-1652243072.jpg'),
-('https://thumbor.forbes.com/thumbor/fit-in/960x/filters:format(jpg)/https://www.forbes.com/wheels/wp-content/uploads/2021/10/2022_new_Range-_Rover-1.png'), 
+('https://thumbor.forbes.com/thumbor/fit-in/960x/filters:format(jpg)/https://www.forbes.com/wheels/wp-content/uploads/2021/10/2022_new_Range-_Rover-1.png'),
 ('https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/gallery_slide/public/images/car-reviews/first-drives/legacy/rrs195mydynamic13021912.jpg?itok=WI_HeFWO'),
 ('https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Audi_A7_Sportback_Genf_2018.jpg/1200px-Audi_A7_Sportback_Genf_2018.jpg'),
 ('https://www.autoscout24.it/cms-content-assets/2V7JvOenwe1ipKlSZCu3RY-70addd0128cc42ca0faf1a8b6f4c460e-audi-a7-sportback-front-1100.jpeg'),

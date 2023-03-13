@@ -34,4 +34,4 @@ join car_image as ci
 on cr.carId = ci.carId
 join image as i
 on ci.imageId = i.imageId
-group by cr.carId
+group by cr.carId;

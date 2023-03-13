@@ -1,7 +1,6 @@
 import { RequestHandler } from 'express';
 import createId from 'helpers/create-id';
 import handleRequestError from 'helpers/handle-request-error';
-import { cars } from 'cars/data';
 import { CarsModel, CarDataBody } from 'cars/types';
 import carDataValidationSchema from 'cars/validation-schemas/car-data-validation-schema';
 

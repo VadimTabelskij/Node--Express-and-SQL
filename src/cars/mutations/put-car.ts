@@ -1,7 +1,6 @@
 import { RequestHandler } from 'express';
 import ServerSetupError from 'errors/server-setup-error';
 import handleRequestError from 'helpers/handle-request-error';
-import { cars } from 'cars/data';
 import CarNotFoundError from 'cars/car-not-found-error';
 import { CarsModel, CarDataBody } from 'cars/types';
 import carDataValidationSchema from 'cars/validation-schemas/car-data-validation-schema';

@@ -1,12 +1,12 @@
 import { RequestHandler } from 'express';
 import createId from 'helpers/create-id';
 import handleRequestError from 'helpers/handle-request-error';
-import { CarsModel, CarDataBody } from 'cars/types';
+import { CarsViewModel, CarDataBody } from 'cars/types';
 import carDataValidationSchema from 'cars/validation-schemas/car-data-validation-schema';
 
 const createCar: RequestHandler<
   {},
-  CarsModel | ErrorResponse,
+  CarsViewModel | ErrorResponse,
   CarDataBody,
   {}
 > = (req, res) => {

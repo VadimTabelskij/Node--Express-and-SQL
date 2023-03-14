@@ -2,12 +2,12 @@ import { RequestHandler } from 'express';
 import ServerSetupError from 'errors/server-setup-error';
 import handleRequestError from 'helpers/handle-request-error';
 import CarNotFoundError from 'cars/car-not-found-error';
-import { CarsModel, CarDataBody } from 'cars/types';
+import { CarsViewModel, CarDataBody } from 'cars/types';
 import partialCarDataValidationSchema from 'cars/validation-schemas/partial-car-data-validation-schema';
 
 const patchCar: RequestHandler<
   { id?: string },
-  CarsModel | ErrorResponse,
+  CarsViewModel | ErrorResponse,
   CarDataBody,
   {}
 > = (req, res) => {

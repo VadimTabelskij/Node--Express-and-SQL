@@ -1,4 +1,4 @@
-export type CarsModel = {
+export type CarsViewModel = {
   id:number,
   address: string,
   person: {
@@ -21,7 +21,7 @@ export type CarsModel = {
   images: string[],
 };
 
-export type CarsData = Omit<CarsModel, 'id' | 'person' | 'location' | 'type'> & {
+export type CarsData = Omit<CarsViewModel, 'id' | 'person' | 'location' | 'type'> & {
   cityId: number,
   brandId: number
 };

@@ -2,7 +2,7 @@ import express from 'express';
 import morgan from 'morgan';
 import config from 'config';
 import cors from 'cors';
-import carsController from 'cars';
+import carsController from 'controllers/cars';
 import DatabaseService from 'services/database-service';
 
 const server = express();

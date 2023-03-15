@@ -1,12 +1,12 @@
 import { RequestHandler } from 'express';
 import ServerSetupError from 'errors/server-setup-error';
 import handleRequestError from 'helpers/handle-request-error';
-import { CarsViewModel } from 'cars/types';
-import CarsModel from 'cars/cars-model';
+import { CarViewModel } from 'controllers/cars/types';
+import CarModel from 'controllers/cars/cars-model';
 
 const deleteCar: RequestHandler<
   { id?: string },
-  CarsViewModel | ErrorResponse,
+  CarViewModel | ErrorResponse,
   {},
   {}
 > = async (req, res) => {
@@ -14,8 +14,8 @@ const deleteCar: RequestHandler<
 
   try {
     if (id === undefined) throw new ServerSetupError();
-    const carViewModel = await CarsModel.getCar(id);
-    await CarsModel.deleteCar(id);
+    const carViewModel = await CarModel.getCar(id);
+    await CarModel.deleteCar(id);
 
     res.status(200).json(carViewModel);
   } catch (err) {

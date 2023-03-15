@@ -1,14 +1,14 @@
 import { RequestHandler } from 'express';
-import CarsModel from 'cars/cars-model';
-import { CarsViewModel } from 'cars/types';
+import CarModel from 'controllers/cars/cars-model';
+import { CarViewModel } from 'controllers/cars/types';
 
 const getCars: RequestHandler<
 {},
-CarsViewModel[],
+CarViewModel[],
 undefined,
 {}
 > = async (req, res) => {
-  const carsViewModelArray = await CarsModel.getCars();
+  const carsViewModelArray = await CarModel.getCars();
   res.json(carsViewModelArray);
 };
 

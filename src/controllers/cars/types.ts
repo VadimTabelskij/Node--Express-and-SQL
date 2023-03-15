@@ -1,4 +1,4 @@
-export type CarsViewModel = {
+export type CarViewModel = {
   id:number,
   address: string,
   person: {
@@ -21,11 +21,11 @@ export type CarsViewModel = {
   images: string[],
 };
 
-export type CarsData = Omit<CarsViewModel, 'id' | 'person' | 'location' | 'type'> & {
+export type CarData = Omit<CarViewModel, 'id' | 'person' | 'location' | 'type'> & {
   cityId: number,
   brandId: number
 };
 
-export type PartialCarData = Partial<CarsData>;
+export type PartialCarData = Partial<CarData>;
 
-export type CarDataBody = PartialRecursive<CarsData>;
+export type CarDataBody = PartialRecursive<CarData>;

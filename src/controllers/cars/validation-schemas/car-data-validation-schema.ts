@@ -1,7 +1,7 @@
-import { CarsData } from 'cars/types';
+import { CarData } from 'controllers/cars/types';
 import * as yup from 'yup';
 
-const carDataValidationSchema: yup.ObjectSchema<CarsData> = yup.object({
+const carDataValidationSchema: yup.ObjectSchema<CarData> = yup.object({
   address: yup.string()
     .required('address is required')
     .min(2, 'address must have at least 2 letters')

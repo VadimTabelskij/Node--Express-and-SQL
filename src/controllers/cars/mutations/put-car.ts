@@ -1,13 +1,13 @@
 import { RequestHandler } from 'express';
 import ServerSetupError from 'errors/server-setup-error';
 import handleRequestError from 'helpers/handle-request-error';
-import CarNotFoundError from 'cars/car-not-found-error';
-import { CarsViewModel, CarDataBody } from 'cars/types';
-import carDataValidationSchema from 'cars/validation-schemas/car-data-validation-schema';
+import CarNotFoundError from 'controllers/cars/car-not-found-error';
+import { CarViewModel, CarDataBody } from 'controllers/cars/types';
+import carDataValidationSchema from 'controllers/cars/validation-schemas/car-data-validation-schema';
 
 const putCar: RequestHandler<
   { id?: string },
-  CarsViewModel | ErrorResponse,
+  CarViewModel | ErrorResponse,
   CarDataBody,
   {}
 > = (req, res) => {

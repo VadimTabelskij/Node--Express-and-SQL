@@ -6,7 +6,7 @@ set @created_car_id = last_insert_id();
 insert into image (src) values
 ('nuotrauka 1'),
 ('nuotrauka 2'),
-('nuotrauka 3'),
+('nuotrauka 3');
 
 set @first_image_id = last_insert_id();
 

@@ -65,7 +65,7 @@ const deleteCar = async (id: string): Promise<void> => {
 const createCar = async (carData: CarData): Promise<CarViewModel> => {
     const connection = await mysql.createConnection(config.database);
 
-     // TODO: įdėti user'io id (kuomet bus įgalinta auth)
+    // TODO: įdėti user'io id (kuomet bus įgalinta auth)
     const preparedSql = `
 insert into car (address, style, year, cityId, userId, brandId) values
 (?, ?, ?, ?, 2, ?);
@@ -104,11 +104,62 @@ ${SQL.GROUP};
     return car;
 };
 
+const replaceCar = async (carId: string, carData: CarData): Promise<CarViewModel> => {
+    const connection = await mysql.createConnection(config.database);
+
+    const preparedSql = `
+  update car
+  set address = ?, style= ?, year=?, cityId=?, brandId=?
+  where carId = ?;
+  set @carImagesIds = (
+    select group_concat(imageId) 
+      from car_image 
+      where carId = ?
+      group by carId);
+  delete from car_image
+  where carId = ?;
+  delete from image
+  where find_in_set(imageId, @carImagesIds);
+  insert into image (src) values
+  ${carData.images.map(() => '(?)').join(',\n')};
+  set @first_image_id = last_insert_id();
+  insert into car_image(imageId, carId)
+  select imageId, ? as carId
+  from image
+  where imageId >= @first_image_id;
+  ${SQL.SELECT}
+  where cr.carId = ?
+  ${SQL.GROUP};
+  `;
+
+    const bindings = [
+      carData.address,
+      carData.style,
+      carData.year,
+      carData.cityId,
+      carData.brandId,
+      carId,
+      carId,
+      carId,
+      ...carData.images,
+      carId,
+      carId,
+    ];
+
+    const [queryResult] = await connection.query<mysql.RowDataPacket[][]>(preparedSql, bindings);
+    const [car] = queryResult[queryResult.length - 1] as CarViewModel[];
+
+    connection.end();
+
+    return car;
+  };
+
 const CarModel = {
     getCars,
     getCar,
     deleteCar,
     createCar,
+    replaceCar,
 };
 
 export default CarModel;

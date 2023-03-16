@@ -13,3 +13,8 @@ export type RegistrationBody = {
   export type UserViewModel = Omit<RegistrationBody, 'password' | 'passwordConfirmation'> & {
     id: number,
   };
+
+  export type AuthResponse = {
+    user: UserViewModel,
+    token: string
+  };

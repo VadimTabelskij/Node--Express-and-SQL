@@ -12,6 +12,10 @@ const {
   DB_SCHEMA,
   DB_HOST,
   DB_PORT,
+
+  B_CRYPT_ROUNDS,
+  TOKEN_SECRET,
+  TOKEN_EXP,
 } = process.env;
 
 if (!SERVER_PROTOCOL
@@ -23,6 +27,10 @@ if (!SERVER_PROTOCOL
   || !DB_SCHEMA
   || !DB_HOST
   || !DB_PORT
+
+  || !B_CRYPT_ROUNDS
+  || !TOKEN_SECRET
+  || !TOKEN_EXP
 ) {
   throw new Error("You must configure constants in '.env' file.");
 }
@@ -42,6 +50,11 @@ const config = {
     port: Number(DB_PORT),
     multipleStatements: true,
   },
+  token: {
+    secret: TOKEN_SECRET,
+    expiration: TOKEN_EXP,
+  },
+  bcryptRounds: Number(B_CRYPT_ROUNDS),
 };
 
 export default config;

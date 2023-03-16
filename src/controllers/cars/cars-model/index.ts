@@ -62,13 +62,12 @@ const deleteCar = async (id: string): Promise<void> => {
     await connection.query(preparedSql, bindings);
 };
 
-const createCar = async (carData: CarData): Promise<CarViewModel> => {
+const createCar = async (carData: CarData, userId: number): Promise<CarViewModel> => {
     const connection = await mysql.createConnection(config.database);
 
-    // TODO: įdėti user'io id (kuomet bus įgalinta auth)
     const preparedSql = `
 insert into car (address, style, year, cityId, userId, brandId) values
-(?, ?, ?, ?, 2, ?);
+(?, ?, ?, ?, ?, ?);
 
 set @created_car_id = last_insert_id();
 
@@ -92,6 +91,7 @@ ${SQL.GROUP};
         carData.style,
         carData.year,
         carData.cityId,
+        userId,
         carData.brandId,
         ...carData.images,
     ];

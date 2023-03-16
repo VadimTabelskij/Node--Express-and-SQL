@@ -1,4 +1,5 @@
 import express from 'express';
+import jwtTokenMiddleware from 'middlewares/jwt-token-middleware';
 import getCars from './queries/get-cars';
 import getCar from './queries/get-car';
 import createCar from './mutations/create-car';
@@ -10,8 +11,8 @@ const carsController = express.Router();
 carsController.get('/', getCars);
 carsController.get('/:id', getCar);
 
-carsController.post('/', createCar);
-carsController.put('/:id', putCar);
-carsController.delete('/:id', deleteCar);
+carsController.post('/', jwtTokenMiddleware, createCar);
+carsController.put('/:id', jwtTokenMiddleware, putCar);
+carsController.delete('/:id', jwtTokenMiddleware, deleteCar);
 
 export default carsController;

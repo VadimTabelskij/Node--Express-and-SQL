@@ -2,9 +2,9 @@ import { RequestHandler } from 'express';
 import handleRequestError from 'helpers/handle-request-error';
 import BcryptService from 'services/bcrypt-service';
 import JwtTokenService from 'services/jwt-token-service';
+import UserModel from 'models/user-model';
 import { RegistrationBody, AuthResponse } from '../types';
 import registrationBodyValidationSchema from '../validation-schemas/registration-body-validation-schema';
-import UserModel from '../user-model';
 
 export const register: RequestHandler<
   {},

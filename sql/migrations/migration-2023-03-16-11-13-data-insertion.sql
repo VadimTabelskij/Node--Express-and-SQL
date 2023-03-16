@@ -55,9 +55,9 @@ insert into image(src) values
 ('https://d1qxviojg2h5lt.cloudfront.net/images/01FW8P5XRBZZTPGA73CJ00YVZ9/inventing.anna.enamored.webp');
 
 insert into user(email, password, name, surname, phone, imageId, role) values
-('admin1@gmail.com', 'CityVilnius1387', 'Bob', 'Basim', '+44 329-4001-209', 1, 'ADMIN'),
-('user1@gmail.com', '', 'Booby', 'Bellagamba', '+49 160-5556-417', 2, 'USER'),
-('user2@gmail.com', '', 'Silva', 'Medina', '+39 159-4337-892', 3, 'USER');
+('admin1@gmail.com', '$2b$10$kh17yrDGE5p1p3TkULEu3uzo0mToJMXgHLdlpL0wx5x3L2yQm3Fla', 'Bob', 'Basim', '+44 329-4001-209', 1, 'ADMIN'),
+('user1@gmail.com', '$2b$10$w0ZMXNQQufweiHuw1rKrGOJBsJl.4cOqZdptUglHwaBvKA/jt6CRq', 'Booby', 'Bellagamba', '+49 160-5556-417', 2, 'USER'),
+('user2@gmail.com', '$2b$10$w0ZMXNQQufweiHuw1rKrGOJBsJl.4cOqZdptUglHwaBvKA/jt6CRq', 'Silva', 'Medina', '+39 159-4337-892', 3, 'USER');
 
 insert into car(userId, cityId, brandId, style, year, address) values
 (2, 1, 1, 'Suv', '2022', 'address 1'),

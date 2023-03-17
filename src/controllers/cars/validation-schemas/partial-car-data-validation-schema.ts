@@ -14,7 +14,7 @@ const partialCarDataValidationSchema: yup.ObjectSchema<PartialCarData> = yup.obj
     .positive('year must be positive'),
 
   images: yup
-    .array(yup.string().required()),
+    .array(yup.string().required().url('image must be accessible')),
 
   cityId: yup.number(),
 
